@@ -1,0 +1,16 @@
+<%- include('headertemplate.ejs') %>
+    <div class="buy-container" >
+        <img src="<%=add%>" alt="">
+
+        <p>Buy it at
+            <%=pric%>
+            only
+        </p>
+
+    </div>
+
+    <div class="button-container">
+        <a href="/orderformat"><button class="buy-now">Buy now</button></a>
+    <button class="add-to-cart" onclick="addtocart()">Add to cart</button>
+    </div>
+    <%- include('footertemplate.ejs') %>

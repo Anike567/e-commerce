@@ -1,0 +1,13 @@
+<%- include('headertemplate.ejs') %>
+
+<div class="container">
+    <%data[0].detail.forEach(ele=>{%>
+        <div class="weding-container">
+            <a href="/buynow?name=<%=ele.add%>&price=<%=ele.price%>"><img src="<%=ele.add%>" alt=""></a>
+            <p>Price  <%=ele.price%>  only</p>
+    
+        </div>
+        
+    <%})%>
+</div>
+<%- include('footertemplate.ejs') %>

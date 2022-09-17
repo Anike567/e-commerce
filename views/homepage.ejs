@@ -1,0 +1,20 @@
+<%- include('headertemplate.ejs') %>
+
+<div class="myslides">
+    <% for(var i=0 ;i<file.length;i++){%>
+        <img class="<%=i+1%> slides"src="/images/slides/<%= file[i] %>" >
+    <%}%>
+    <a onclick="previous()" class="pre">&#10094</a>
+    <a class="next" onclick="next()" >&#10095</a>
+</div>
+<div class="container">
+    <a href="/facecare"><img src="images/categories/facecare.webp" alt=""></a>
+    <a href="/indianwear"><img src="images/categories/indian wear.webp" alt=""></a>
+    <a href="/haircare"><img src="images/categories/haircare.webp" alt=""></a>
+    <a href=""><img src="images/categories/handbagsandaccesories.webp" alt=""></a>
+    <a href="/jeans"><img src="images/categories/jeans.webp" alt=""></a>
+    <a href="/shoes"><img src="images/categories/sportswear.webp" alt=""></a>
+    <a href="/kids"><img src="images/categories/topsandtees.webp" alt=""></a>
+</div>
+    
+<%- include('footertemplate.ejs') %>

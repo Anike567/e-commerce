@@ -1,0 +1,337 @@
+/* from here css for lofin starts */
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+    background-color: rgb(247, 240, 231);
+    scrollbar-color: red;
+}
+
+
+.login{
+    
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: space-evenly;
+    height: 50vh;
+    width: 50vw;
+    margin:15vh auto 35vh auto;
+
+}
+input {
+    display: block;
+    text-align: center;
+    height: 25px;
+    margin: 50px auto;
+    width: 40vw;
+   border: 2px solid black;
+    border-top: 0.5px;
+    font-size: 1rem;
+    font-weight: bold;
+    outline: none;
+    border-left: 0;
+}
+input:focus::placeholder{
+    color: transparent;
+}
+
+button{
+    height: 35px;
+    width: 80px;
+    background-color: rgb(49, 174, 228);
+    cursor: pointer;
+    border: 2px solid rgb(49, 174, 228);
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: bold;
+}
+button:hover{
+    background-color:rgb(151, 197, 217) ;
+}
+
+/* css for slider starts from here */
+
+.slides{
+    width: 100vw;
+    display: none;
+    margin-top: 20px;
+    border-radius: 10px;
+
+
+}
+.myslides a{
+    top: 250px;;
+   position: absolute;
+   font-weight: bolder;
+   font-size: 2.5rem;
+   cursor: pointer;
+   margin: 10px;
+   color: auto;
+}
+
+.pre{
+    left: 0;
+}
+.next{
+    right: 0;
+}
+.hide{
+    transition: ease 30s;
+    display: block;
+}
+
+/* css for sliders ends here */
+
+
+
+/* css for homepage starts from here */
+
+nav{
+    background-color: rgb(209, 236, 236);
+    width: 100vw;
+    height: 20vh;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+}
+
+nav li{
+    padding-right: 20px;
+
+}
+
+nav li img{
+    height: 40px;
+    width: 40px;
+}
+.ham{
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    display: none;
+}
+
+.cross{
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    display: none;
+    
+
+}
+.cross img{
+    height: 40px;
+    width: 40px;
+}
+
+ul{
+    list-style: none;
+    font-style: normal;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    
+}
+li{
+    margin: 0 0.5vw;
+}
+.logo{
+    color: rgb(209, 236, 236);
+    height: 40px;
+    width: 50px;
+    padding: 0;
+    margin: 0;
+}
+a{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+#search{
+    width:  20vw;
+    border-radius: 4px;
+}
+.container img{
+    
+  
+    width: 20vw;
+    margin: 2vw;
+}
+
+
+.transist{
+    transition-duration: 0.5s;
+    height: 300px;
+}
+
+.transistup{
+    transition-duration:0.5s;
+    height:50px; ;
+
+
+}
+
+
+
+/* css for wedding page starts from here */
+
+.weding-container{
+    float: left;
+    text-align: center;
+}
+.weding-container img{
+    height: 300px;
+    cursor: pointer;
+}
+.weding-container p{
+    font-size: larger;
+    font-weight: bolder;
+}
+/* css for wedding page end from here  */
+
+/* css for buynow */
+
+.buy-container{
+    width: 300px;
+    height: 400px;
+    margin: auto;
+    text-align: center;
+}
+.buy-container img{
+    width: 300px;
+    height: 300px;
+
+}
+.buy-container p{
+    font-weight: bolder;
+    font-size: larger;
+    
+
+}
+.buy-now{
+    background-color: rgb(236, 120, 120);
+    border: 2px solid rgb(236, 120, 120);
+    border-radius: 5px;
+    width: 100px;
+    margin: 0 30px;
+}
+.buy-now:hover{
+    background-color:red ;
+}
+.add-to-cart{
+    border-radius: 5px;
+    width: 100px;
+}
+.button-container{
+    width: 300px;
+    margin: auto;
+}
+
+
+/* css for orderformat */
+.paymentmethod{
+    width: 60vw;
+    margin: auto;
+    align-items: center;
+}
+
+.paymentmethod input[type=radio]{
+    display: inline;
+    width:50px;
+
+}
+.paymentmethod h4{
+    display: inline;
+}
+.divider{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    
+    
+}
+
+
+
+/* media qury starts from hear */
+
+@media screen and (max-width:800px){
+    nav a{
+        font-size:0.7rem;
+        color: red;
+    }
+
+    .container img{
+        width: 40vw;
+    }
+
+
+    
+}
+@media screen and (max-width:500px){
+    nav{
+        width: 100vw;
+        height: 15vw;
+    }
+    .slides img{
+        width: 100vw;
+    }
+    .ham{
+        display: block;
+       
+    }
+    .ham img{
+        height: 30px;
+        width: 30px;
+        margin-left: 20px;
+    }
+
+    nav li{
+        margin: 5px 0;
+    }
+    nav ul{
+        flex-direction: column;
+        
+    }
+    .left-container{
+        display: none;
+    }
+
+    .container img{
+        width: 80vw;
+    }
+    .container{
+        text-align: center;
+    }
+
+    .weding-container a{
+        width: 80vw;
+
+    }
+    .weding-container{
+        text-align: center;
+    
+    }
+
+    .myslides a{
+        top: 80px;
+        font-size: 1.5rem;
+    }
+
+
+    
+    
+}
+
+
+

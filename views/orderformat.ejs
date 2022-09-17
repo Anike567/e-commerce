@@ -1,0 +1,24 @@
+<%- include('headertemplate.ejs') %>
+    <div class="paymentmethod">
+        <form action="" method="post">
+            <div class="divider"><input type="radio" name="payment-option" onchange="this.form.submit()">
+                <h4>UPI</h4>
+            </div>
+        </form>
+        <form action="" method="post">
+            <div class="divider"><input type="radio" name="payment-option" onchange="this.form.submit()">
+                <h4>Wallets</h4>
+            </div>
+        </form>
+        <form action="" method="post">
+            <div class="divider"><input type="radio" name="payment-option" onchange="this.form.submit()">
+                <h4>Credit/Debit/ATMCard</h4>
+            </div>
+        </form>
+        <form action="" method="post">
+            <div class="divider"><input type="radio" name="payment-option" onchange="this.form.submit()">
+                <h4>Cash on Deleivery</h4>
+            </div>
+        </form>
+    </div>
+<%- include('footertemplate.ejs') %>
